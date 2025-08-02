@@ -61,10 +61,18 @@
     }
     .video-wrapper {
       margin: 2rem 0;
+      position: relative;
+      padding-bottom: 56.25%;
+      height: 0;
+      overflow: hidden;
     }
-    .video-wrapper video {
+    .video-wrapper iframe {
+      position: absolute;
+      top: 0;
+      left: 0;
       width: 100%;
-      border-radius: 8px;
+      height: 100%;
+      border: 0;
     }
     .footer-logo {
       display: flex;
@@ -78,6 +86,7 @@
       display: flex;
       gap: 1rem;
       margin-top: 2rem;
+      flex-wrap: wrap;
     }
     .social-links a {
       color: #cbd5e1;
@@ -89,7 +98,7 @@
 <body>
   <header>
     <div class="logo-area">
-      <img src="logo-placeholder.png" alt="Symbol Logo" />
+      <img src="Watermark youTube.png" alt="Symbol Logo" />
       <div>
         <h1>Art Siel Experience</h1>
         <h2>To be – To fill – To have</h2>
@@ -112,10 +121,7 @@
     </p>
 
     <div class="video-wrapper">
-      <video controls poster="video-thumbnail.png">
-        <source src="statement-video.mp4" type="video/mp4">
-        Your browser does not support the video tag.
-      </video>
+      <iframe src="https://www.youtube.com/embed/jVhuTWWHuAA" title="Art Siel Statement Video" allowfullscreen></iframe>
     </div>
 
     <section>
@@ -144,7 +150,7 @@
 
     <div class="social-links">
       <a href="#">LinkedIn</a>
-      <a href="#">YouTube</a>
+      <a href="https://www.youtube.com/@ArtSiel-j8k">YouTube</a>
       <a href="#">Facebook</a>
       <a href="#">Instagram</a>
       <a href="#">TikTok</a>
@@ -153,8 +159,9 @@
     </div>
 
     <div class="footer-logo">
-      <img src="artsiel-logo.png" alt="Art Siel Logo" />
+      <img src="Art Siel Logo 2.jpg" alt="Art Siel Logo" />
     </div>
   </main>
 </body>
 </html>
+
